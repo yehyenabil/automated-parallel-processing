@@ -1,17 +1,27 @@
 # automate parallel processing :
-data engineering project runs airflow on AWS EC2 to applay parall tasks  on AWS RDS Postgres instance database as the database.
-#all commands used :
-sudo apt update
-sudo apt install python3-pip
-sudo apt install python3.10-venv
-python3 -m venv airflow_venv
-sudo pip install pandas 
-sudo pip install s3fs
-sudo pip install fsspec
-sudo pip install apache-airflow
-sudo pip install apache-airflow-providers-postgres
+-data engineering project runs airflow on AWS EC2 to apply parallel tasks on AWS RDS Postgres instance database as the database. \
+
+all commands used : \
+sudo apt update \
+
+sudo apt install python3-pip \
+
+sudo apt install python3.10-venv \
+
+python3 -m venv airflow_venv \
+
+sudo pip install pandas \
+
+sudo pip install s3fs \
+
+sudo pip install fsspec \
+
+sudo pip install apache-airflow \
+
+sudo pip install apache-airflow-providers-postgres \
+
 psql -h rds-db-test-yml-4.cvzpgj7bczqy.us-west-2.rds.amazonaws.com -p 5432 -U postgres -W
-CREATE EXTENSION aws_s3 CASCADE;
+CREATE EXTENSION aws_s3 CASCADE; \
 
 aws iam create-role \
     --role-name postgresql-S3-Role-yml-4 \
