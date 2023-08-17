@@ -1,6 +1,6 @@
 # automate parallel processing :
-data engineering project runs airflow on AWS EC2 to applay parall tasks  on AWS RDS Postgres instance database as the database .
-all commands used :
+data engineering project runs airflow on AWS EC2 to applay parall tasks  on AWS RDS Postgres instance database as the database.
+##all commands used :
 sudo apt update
 sudo apt install python3-pip
 sudo apt install python3.10-venv
